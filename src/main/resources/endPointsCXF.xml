@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:cxf="http://camel.apache.org/schema/cxf" xmlns:sec="http://cxf.apache.org/configuration/security"
+       xmlns:http="http://cxf.apache.org/transports/http/configuration"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://camel.apache.org/schema/cxf
+	   http://camel.apache.org/schema/cxf/camel-cxf.xsd">
+  <cxf:rsServer id="cdiagnostic_v1" address="/cdiagnostic/v1"
+                  loggingFeatureEnabled="true" loggingSizeLimit="20"  >
+        <cxf:inInterceptors> 
+        </cxf:inInterceptors>
+        <cxf:outInterceptors>            
+        </cxf:outInterceptors>
+        <cxf:serviceBeans>
+            <ref bean="employeeAPI"/> 
+        </cxf:serviceBeans>
+        <cxf:providers>
+            <ref bean="jsonProvider"/>
+        </cxf:providers>
+        <cxf:features>
+            <ref bean="commonValidationFeature"/>
+        </cxf:features>
+    </cxf:rsServer>
+</beans>	   
