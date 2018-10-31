@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+       http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://camel.apache.org/schema/spring 
+       http://camel.apache.org/schema/spring/camel-spring.xsd">
+	<bean id="employeeController"
+		class="f2a.cdiagnostic.controller.EmployeeController" /> 
+	<routeContext id="cdiagnosticRouting"
+		xmlns="http://camel.apache.org/schema/spring">
+		<route streamCache="false" id="BATCH_01_CDIAGNOSTIC">
+			<from uri="quartz2://employees/timerName?cron=0/30 * * * * ?" />
+			<to uri="bean:employeeController?method=print" />
+		</route>
+	</routeContext>
+</beans>

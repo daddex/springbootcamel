@@ -7,7 +7,8 @@
        http://camel.apache.org/schema/spring 
        http://camel.apache.org/schema/spring/camel-spring.xsd
     ">
-	<import resource="mycamel.xml"/> 
+	<import resource="myRoute.xml"/>
+	<import resource="myBatch.xml"/> 	
 	<import resource="endPointsCXF.xml"/>
 	<camelContext id="camelESB" xmlns="http://camel.apache.org/schema/spring">
 		<routeContextRef ref="cdiagnosticRouting"/>
