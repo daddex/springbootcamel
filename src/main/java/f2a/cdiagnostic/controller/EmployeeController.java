@@ -15,6 +15,6 @@ public class EmployeeController {
 	}
 
 	public void print(Exchange exchange) {
-		System.out.println("batch message ".concat(String.valueOf(new Date())));
+		System.out.println(" BATCH_ROUTE IS RUNNING AT  ".concat(String.valueOf(new Date())).concat(" AND IT SAYS CIAO !!!!"));
 	}
 }
