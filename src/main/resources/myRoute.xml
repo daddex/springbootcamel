@@ -11,7 +11,7 @@
 	<bean id="employeeController" class="f2a.cdiagnostic.controller.EmployeeController" />
 	<bean id="jsonProvider" class="com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider"/>
 	<bean id="commonValidationFeature" class="org.apache.cxf.validation.BeanValidationFeature"/>
-	<routeContext id="cdiagnosticRouting"
+	<routeContext id="API_ROUTE"
 		xmlns="http://camel.apache.org/schema/spring">
 		<route trace="true" id="CDIAGNOSTIC_V1">
 			<from

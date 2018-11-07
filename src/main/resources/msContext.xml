@@ -11,7 +11,8 @@
 	<import resource="myBatch.xml"/> 	
 	<import resource="endPointsCXF.xml"/>
 	<camelContext id="camelESB" xmlns="http://camel.apache.org/schema/spring">
-		<routeContextRef ref="cdiagnosticRouting"/>
+		<routeContextRef ref="API_ROUTE"/>
+		<routeContextRef ref="BATCH_ROUTE"/>
 	</camelContext>
-
+<!--  http://localhost:8080/api/cdiagnostic/v1/employees/1 -->
 </beans>       

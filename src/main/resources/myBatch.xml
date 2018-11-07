@@ -8,7 +8,7 @@
        http://camel.apache.org/schema/spring/camel-spring.xsd">
 	<bean id="employeeController"
 		class="f2a.cdiagnostic.controller.EmployeeController" /> 
-	<routeContext id="cdiagnosticRouting"
+	<routeContext id="BATCH_ROUTE"
 		xmlns="http://camel.apache.org/schema/spring">
 		<route streamCache="false" id="BATCH_01_CDIAGNOSTIC">
 			<from uri="quartz2://employees/timerName?cron=0/30 * * * * ?" />
