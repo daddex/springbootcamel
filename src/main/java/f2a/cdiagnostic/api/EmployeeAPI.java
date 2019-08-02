@@ -10,7 +10,7 @@ import javax.ws.rs.core.MediaType;
 import f2a.cdiagnostic.bean.response.Employee;
 
 @Path("/employees")
-@WebService(name = "Professional Category", targetNamespace = "http://www.gigroup.com/")
+@WebService(name = "Professional Category", targetNamespace = "http://www.daddex.org/")
 public class EmployeeAPI {
 	@GET
 	@Produces({ MediaType.APPLICATION_JSON })
