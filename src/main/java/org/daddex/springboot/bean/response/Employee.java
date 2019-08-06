@@ -1,4 +1,4 @@
-package f2a.cdiagnostic.bean.response;
+package org.daddex.springboot.bean.response;
 
 public class Employee {
 	

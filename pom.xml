@@ -2,8 +2,8 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>f2a.cdiagnostic</groupId>
-	<artifactId>cdiagnostic</artifactId>
+	<groupId>org.daddex.springboot</groupId>
+	<artifactId>daddexSpringBoot</artifactId>
 	<version>0.0.1</version>
 
 
@@ -117,6 +117,11 @@
 			<version>${camel-version}</version>
 		</dependency>
 		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-mail</artifactId>
+			<version>${camel-version}</version>
+		</dependency>
+		<dependency>
 			<groupId>org.apache.cxf</groupId>
 			<artifactId>cxf-rt-transports-http-jetty</artifactId>
 			<version>2.7.6</version>
@@ -138,6 +143,11 @@
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-util</artifactId>
 			<version>9.3.9.v20160517</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-email</artifactId>
+			<version>RELEASE</version>
 		</dependency>
 	</dependencies>
 	<build>

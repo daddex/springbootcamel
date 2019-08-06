@@ -1,4 +1,4 @@
-package f2a.cdiagnostic.api;
+package org.daddex.springboot.api;
 
 import javax.jws.WebService;
 import javax.ws.rs.GET;
@@ -7,7 +7,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import f2a.cdiagnostic.bean.response.Employee;
+import org.daddex.springboot.bean.response.Employee;
 
 @Path("/employees")
 @WebService(name = "Professional Category", targetNamespace = "http://www.daddex.org/")

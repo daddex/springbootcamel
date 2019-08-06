@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "a67e8d35-e177-4c43-aea4-bec0abf2eb44",
+		"name": "infoCert",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "retrieveMaile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"password\":\"CAT_DAVIDE\",\n  \"imapHost\": \"ITA\",\n  \"userMail\": \"NTO\",\n  \"maxMessage\":\"CATALOG PER I _DAVIDE\"\n \n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/daddexSpringBoot/v1/emailmanager/retrieve",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"daddexSpringBoot",
+						"v1",
+						"emailmanager",
+						"retrieve"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
